@@ -9,6 +9,15 @@
   gulp/tasks/default.js specifies the default set of tasks to run
   when you run `gulp`.
 */
-var require_dir = require('require-dir');
+var require_dir = require('require-dir'),
+    gulp        = require('gulp'),
+    clean       = require('gulp-rimraf'),
+    config      = require('./build/config')
 
 require_dir('./build/tasks',{recurse:true});
+
+// CLEAN
+gulp.task('clean', function () {
+  return gulp.src([config.build.path], { read: false })
+    .pipe(clean());
+});

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
 gulp.task('watch',function() {
- return 'hello' 
+ return console.log('hello');
 });
 
