@@ -5,9 +5,9 @@ var root = process.cwd();
 module.exports = {
   runner:{
     src:{
-      html: root + 'test/runner.html',
-      js: root + 'lib/**/*.js',
-      test: root + 'test/spec/**/*js'
+      html: 'test/runner.html',
+      js: 'lib/**/*.js',
+      test: 'test/spec/**/*js'
     }
   },
   lint:{
@@ -17,6 +17,7 @@ module.exports = {
     path:'test/spec/**/*.js',
     options:{
       ui:'bdd',
+      growl: true,
       reporter:'spec'
     }
   },
