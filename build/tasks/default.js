@@ -1,5 +1,4 @@
 var gulp = require('gulp');
 
-gulp.task('default', ['clean'], function () {
-  gulp.start('build', 'test:unit');
+gulp.task('default', ['watch'], function () {
 });

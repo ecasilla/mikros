@@ -1,6 +1,6 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+    config = require('../config')
 
-gulp.task('watch',function() {
- return console.log('hello');
+gulp.task('watch', function () {
+    gulp.watch(config.lint.all, ['build']);
 });
-
