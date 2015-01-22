@@ -10,5 +10,5 @@ gulp.task('runner',function() {
  target
  .pipe(inject(jsfiles,{name:'lib'}))
  .pipe(inject(testfile,{name:'test'}))
- .pipe(gulp.dest('./dist'))
+ .pipe(gulp.dest('./test'))
 });
