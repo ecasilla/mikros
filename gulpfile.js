@@ -12,9 +12,9 @@
 var require_dir = require('require-dir'),
     gulp        = require('gulp'),
     clean       = require('gulp-rimraf'),
-    config      = require('./build/config')
+    config      = require('./tasks/config')
 
-require_dir('./build/tasks',{recurse:true});
+require_dir('./tasks/tasks',{recurse:true});
 
 // CLEAN
 gulp.task('clean', function () {

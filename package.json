@@ -37,6 +37,10 @@
     "require-dir": "^0.1.0"
   },
   "dependencies": {
+    "di": "0.0.1",
+    "hooks": "^0.3.2",
+    "kafka-node": "^0.2.15",
+    "logtron": "^6.1.1",
     "winston": "^0.8.3"
   }
 }
