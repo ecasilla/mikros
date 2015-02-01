@@ -37,10 +37,16 @@
     "require-dir": "^0.1.0"
   },
   "dependencies": {
+    "commander": "^2.6.0",
     "di": "0.0.1",
+    "fs-extra": "^0.16.3",
     "hooks": "^0.3.2",
     "kafka-node": "^0.2.15",
     "logtron": "^6.1.1",
     "winston": "^0.8.3"
+  },
+  "preferGlobal":true,
+  "bin": {
+    "mikros": "bin/cli.js"
   }
 }
